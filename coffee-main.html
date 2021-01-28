@@ -6,9 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Website</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styling.css">
 
 </head>
-<!--teal-tile-->
+<!--starbucks design styling-->
+<section>
+  <div class = "circle"></div>
+  <header>
+    <a href="#"><img src="images/logo.png" class="logo"></a> <!--Navigation and Green Logo-->
+    <ul>
+      <li><a href="#" class>Home</a></li>
+      <li><a href="#" class>Menu</a></li>
+      <li><a href="#" class>Whats New?</a></li>
+      <li><a href="#" class>Contact</a></li>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="textBox">
+      <!--teal-tile-->
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-4">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification ">
+                <label for="roast-selection">Roast Types</label>
+                <select id="roast-selection" class="button dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <option class="dropdown-item">All</option>
+                  <option class="dropdown-item">Drip</option>
+                  <option class="dropdown-item">Iced</option>
+                  <option class="dropdown-item">Frozen</option>
+                  <option class="dropdown-item">Tea</option>
+                </select>
+                <input class="form-control search-input" id="myInput" type="text"
+                       placeholder="Browse Our Options">
+              </article>
+              <!--yellow-tile-->
+              <article class="tile is-child notification">
+                <label for="add-coffee">Custom Request</label>
+                <select id="add-coffee" class="button  dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <option class="dropdown-item">Drip</option>
+                  <option class="dropdown-item">Iced</option>
+                  <option class="dropdown-item">Frozen</option>
+                  <option class="dropdown-item">Tea</option>
+                </select>
+
+                <div class="">
+                  <input class="form-control search-input" id="newDrinkSearch"
+                         type="text"
+                         placeholder="Custom Drink">
+                  <input class="button is-dark" id="submit" type="submit"/>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!--Coffee-List-Tile-->
+          <article class="tile is-parent notification is-dark">
+            <div id="coffees">
+            </div>
+          </article>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="imgBox">
+      <img src="images/img1.png" class="starbucks">
+    </div>
+  </div>
+  <ul class="thumb">
+    <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+    <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+    <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+  </ul>
+  <ul class="sci">
+    <li><a href="#"><img src="images/facebook.png"></a>
+    <li><a href="#"><img src="images/twitter.png"></a>
+    <li><a href="#"><img src="images/instagram.png"></a>
+  </ul>
+</section>
+<!--
+&lt;!&ndash;teal-tile&ndash;&gt;
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-4">
     <div class="tile">
@@ -26,7 +105,7 @@
           <input class="form-control search-input" id="myInput" type="text"
                  placeholder="Browse Our Options">
         </article>
-        <!--yellow-tile-->
+        &lt;!&ndash;yellow-tile&ndash;&gt;
         <article class="tile is-child notification is-warning">
           <label for="add-coffee">Custom Request</label>
           <select id="add-coffee" class="button is-dark dropdown-toggle" data-toggle="dropdown"
@@ -45,13 +124,14 @@
         </article>
       </div>
     </div>
-    <!--Coffee-List-Tile-->
+    &lt;!&ndash;Coffee-List-Tile&ndash;&gt;
     <article class="tile is-parent notification is-dark">
       <div id="coffees">
       </div>
     </article>
   </div>
 </div>
+-->
 
 
 

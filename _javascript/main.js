@@ -15,15 +15,15 @@ createCoffee.addEventListener('click', function () {
   let addCoffeeRoast = document.getElementById("add-coffee");
   let newCoffeeName = document.getElementById('newDrinkSearch');
 
-  if (newCoffeeName !== ""){
+  if (newCoffeeName !== "") {
     newCoffee(addCoffeeRoast.value, newCoffeeName.value);
     updateCoffees();
   }
 });
+
 function renderCoffee(coffee) {
-  let html = '<div class="coffee m-4">';
-  html += '<h2 class="coffee-name">' + coffee.name + '</h2>';
-  html += '<p class="coffee-roast">' + coffee.roast + '</p>';
+  let html = '<div class="coffee">';
+  html += coffee.name ;
   html += '</div>';
 
   return html;
@@ -31,21 +31,22 @@ function renderCoffee(coffee) {
 
 function renderCoffees(coffees) {
   let html = '';
-  for(let i = 0; i < coffees.length; i++) {
+  for (let i = 0; i < coffees.length; i++) {
     html += renderCoffee(coffees[i]);
   }
 
   return html;
 }
+
 /*filter coffee*/
-let refreshCoffees = function() {
+let refreshCoffees = function () {
   let selectedRoast = roastSelection.value;
   let selectedCoffee = coffeeSelection.value;
   let filteredCoffees = [];
 
-  coffees.forEach(function(coffee) {
+  coffees.forEach(function (coffee) {
     if ((coffee.roast === selectedRoast) || selectedRoast === "All") {
-      if (coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())){
+      if (coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
         filteredCoffees.push(coffee);
       }
     }
@@ -79,7 +80,15 @@ let coffees = [
 
 tbody.innerHTML = renderCoffees(coffees);
 
-roastSelection.addEventListener('change', refreshCoffees );
-coffeeSelection.addEventListener("keydown", function() {
-  refreshCoffees (coffeeSelection.value);
+roastSelection.addEventListener('change', refreshCoffees);
+coffeeSelection.addEventListener("keydown", function () {
+  refreshCoffees(coffeeSelection.value);
 });
+
+function imgSlider(anything){
+  document.querySelector('.starbucks').src = anything;
+}
+function changeCircleColor(color){
+  const  circle = document.querySelector('.circle');
+  circle.style.background = color;
+}
