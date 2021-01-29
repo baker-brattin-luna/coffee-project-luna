@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="eng" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
 
 </head>
 <!--starbucks design styling-->
+<body>
 <section>
   <div class = "circle"></div>
   <header>
@@ -21,55 +22,13 @@
       <li><a href="#" class>Contact</a></li>
     </ul>
   </header>
+
   <div class="content">
     <div class="textBox">
-      <!--teal-tile-->
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-4">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification ">
-                <label for="roast-selection">Roast Types</label>
-                <select id="roast-selection" class="button dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                  <option class="dropdown-item">All</option>
-                  <option class="dropdown-item">Drip</option>
-                  <option class="dropdown-item">Iced</option>
-                  <option class="dropdown-item">Frozen</option>
-                  <option class="dropdown-item">Tea</option>
-                </select>
-                <input class="form-control search-input" id="myInput" type="text"
-                       placeholder="Browse Our Options">
-              </article>
-              <!--yellow-tile-->
-              <article class="tile is-child notification">
-                <label for="add-coffee">Custom Request</label>
-                <select id="add-coffee" class="button  dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                  <option class="dropdown-item">Drip</option>
-                  <option class="dropdown-item">Iced</option>
-                  <option class="dropdown-item">Frozen</option>
-                  <option class="dropdown-item">Tea</option>
-                </select>
-
-                <div class="">
-                  <input class="form-control search-input" id="newDrinkSearch"
-                         type="text"
-                         placeholder="Custom Drink">
-                  <input class="button is-dark" id="submit" type="submit">
-                </div>
-              </article>
-            </div>
-          </div>
-          <!--Coffee-List-Tile-->
-          <article class="tile is-parent notification is-dark">
-            <div id="coffees">
-            </div>
-          </article>
-        </div>
-      </div>
-
-
+      <h2> It's not just Coffee<br>It's <span>Starbucks</span></h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur assumenda atque aut
+        ea facere fugiat fugit illo molestiae natus nobis, officiis quibusdam quis recusandae reiciendis rerum sed similique ut.</p>
+      <a href="#">Learn More</a>
     </div>
     <div class="imgBox">
       <img src="images/img1.png" class="starbucks">
@@ -86,56 +45,81 @@
     <li><a href="#"><img src="images/instagram.png"></a>
   </ul>
 </section>
-<!--
-&lt;!&ndash;teal-tile&ndash;&gt;
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-4">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child notification is-primary">
-          <label for="roast-selection">Roast Types</label>
-          <select id="roast-selection" class="button is-dark dropdown-toggle" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-            <option class="dropdown-item">All</option>
-            <option class="dropdown-item">Drip</option>
-            <option class="dropdown-item">Iced</option>
-            <option class="dropdown-item">Frozen</option>
-            <option class="dropdown-item">Tea</option>
-          </select>
-          <input class="form-control search-input" id="myInput" type="text"
-                 placeholder="Browse Our Options">
-        </article>
-        &lt;!&ndash;yellow-tile&ndash;&gt;
-        <article class="tile is-child notification is-warning">
-          <label for="add-coffee">Custom Request</label>
-          <select id="add-coffee" class="button is-dark dropdown-toggle" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-            <option class="dropdown-item">Drip</option>
-            <option class="dropdown-item">Iced</option>
-            <option class="dropdown-item">Frozen</option>
-            <option class="dropdown-item">Tea</option>
-          </select>
 
-          <div class="">
-            <input class="form-control search-input" id="newDrinkSearch"
-                   type="text"
-                   placeholder="Custom Drink">
-            <input class="button is-dark" id="submit" type="submit"/>
-        </article>
-      </div>
-    </div>
-    &lt;!&ndash;Coffee-List-Tile&ndash;&gt;
-    <article class="tile is-parent notification is-dark">
-      <div id="coffees">
-      </div>
-    </article>
+<section class="section">
+  <div class = search-custom>
+<div class="search-roast">
+                <label for="roast-selection">Roast Types</label><br>
+                <select id="roast-selection" class="button dropdown-toggle button select is-rounded dropdown-toggle is-normal" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <option class="dropdown-item">All</option>
+                  <option class="dropdown-item">Drip</option>
+                  <option class="dropdown-item">Iced</option>
+                  <option class="dropdown-item">Frozen</option>
+                  <option class="dropdown-item">Tea</option>
+                </select>
+                <input class="input is-medium form-control search-input is-rounded" id="myInput" type="text"
+                       placeholder="Browse Our Options">
+
+        </div>
+<br>
+              <!--Custom Column-->
+
+<div class="custom-request">
+                <label for="add-coffee">Custom Request</label><br>
+                <select id="add-coffee" class="button select is-rounded dropdown-toggle is-normal" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <option class="dropdown-item">Select Drink Type</option>
+                  <option class="dropdown-item">Drip</option>
+                  <option class="dropdown-item">Iced</option>
+                  <option class="dropdown-item">Frozen</option>
+                  <option class="dropdown-item">Tea</option>
+                </select>
+  <input class="input is-medium form-control search-input is-rounded" type="text" placeholder="Custom Drink" id="newDrinkSearch">
+                  <input class="button" id="submit" type="submit">
+                </div>
   </div>
-</div>
--->
 
+
+
+
+
+          <!--Coffee-List-Tile-->
+
+        <div id="coffees">
+        </div>
+
+</section>
+<nav class="level">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Tweets</p>
+      <p class="title">3,456</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Following</p>
+      <p class="title">123</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Followers</p>
+      <p class="title">456K</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Likes</p>
+      <p class="title">789</p>
+    </div>
+  </div>
+</nav>
 
 
 
 <script src=_javascript/main.js></script>
 </body>
 </html>
+

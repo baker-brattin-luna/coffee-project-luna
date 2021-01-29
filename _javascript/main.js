@@ -46,7 +46,7 @@ let refreshCoffees = function () {
 
   coffees.forEach(function (coffee) {
     if ((coffee.roast === selectedRoast) || selectedRoast === "All") {
-      if (coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
+      if (coffee.name.toLowerCase().startsWith(selectedCoffee.toLowerCase())) {
         filteredCoffees.push(coffee);
       }
     }
