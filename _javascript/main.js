@@ -22,11 +22,12 @@ createCoffee.addEventListener('click', function () {
 });
 
 function renderCoffee(coffee) {
-  let html = '<div class="coffee">';
-  html += coffee.name ;
-  html += '</div>';
-
-  return html;
+  return `
+    <div class="coffee">          
+        <h2>${coffee.name}</h2>
+        <p>${coffee.roast}</p>
+    </div>
+`
 }
 
 function renderCoffees(coffees) {
