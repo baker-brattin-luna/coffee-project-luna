@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   console.log('Hello Bulma!');
-});
+});*/
 "use strict"
 
 let tbody = document.querySelector('#coffees');
@@ -17,18 +17,20 @@ createCoffee.addEventListener('click', function () {
 
   if (newCoffeeName !== "") {
     newCoffee(addCoffeeRoast.value, newCoffeeName.value);
-    updateCoffees();
+    newCoffeeName();
   }
 });
 
 function renderCoffee(coffee) {
   return `
-    <div class="coffee">          
-        <h2>${coffee.name}</h2>
+    <div class="coffee">
+        <h4>${coffee.name}</h4>
         <p>${coffee.roast}</p>
     </div>
 `
 }
+
+
 
 function renderCoffees(coffees) {
   let html = '';

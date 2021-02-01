@@ -10,7 +10,7 @@ section
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 2em ;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -167,4 +167,11 @@ article{
 }
 .notification {
   background-color: #1E7142;
+}
+#display-list {
+  background-color: #1E7142;
+}
+.sm-nav-logo {
+  height:25%;
+  width:25%;
 }
