@@ -175,3 +175,18 @@ article{
   height:25%;
   width:25%;
 }
+h4 {
+  padding-right: 30px;
+  padding-left:35px;
+  padding-bottom: 4px;
+  margin: auto;
+}
+p {
+  padding-right:40px;
+ color:#1E7142;
+  font-size: 20px;
+  margin: auto;
+}
+.mobile-tile {
+  background-color:#1E7142;
+}
